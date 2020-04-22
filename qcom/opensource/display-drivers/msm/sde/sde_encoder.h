@@ -708,4 +708,11 @@ static inline bool sde_encoder_is_widebus_enabled(struct drm_encoder *drm_enc)
 bool sde_crtc_has_fps_switch_to_low_set(struct drm_crtc *crtc);
 
 void sde_encoder_add_data_to_minidump_va(struct drm_encoder *drm_enc);
+
+/**
+ * sde_encoder_trigger_early_wakeup - trigger early wake up
+ * @drm_enc:    Pointer to drm encoder structure
+ */
+void sde_encoder_trigger_early_wakeup(struct drm_encoder *drm_enc);
+
 #endif /* __SDE_ENCODER_H__ */
